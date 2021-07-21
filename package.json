@@ -1,0 +1,53 @@
+{
+  "name": "react-file-preview",
+  "version": "1.0.0",
+  "description": "React component to render and preview images, pdf and text files via file object or web url",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syadav214/react-file-preview.git"
+  },
+  "keywords": [
+    "reactjs",
+    "js",
+    "file",
+    "preview",
+    "preview",
+    "image",
+    "preview",
+    "pdf",
+    "preview",
+    "text",
+    "preview"
+  ],
+  "author": "Santosh Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syadav214/react-file-preview/issues"
+  },
+  "homepage": "https://github.com/syadav214/react-file-preview#readme",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-object-assign": "^7.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "8.0.4",
+    "webpack": "4.26.1",
+    "webpack-cli": "3.1.2"
+  }
+}
