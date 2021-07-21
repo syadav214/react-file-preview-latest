@@ -1,5 +1,25 @@
 import React, { Component } from "react";
 
+const invalidFileExtensions = [
+  "exe",
+  "scr",
+  "msi",
+  "bat",
+  "sh",
+  "cmd",
+  "com",
+  "dll",
+  "pif",
+  "scr",
+  "vb",
+  "vbe",
+  "vbs",
+  "ws",
+  "wsc",
+  "wsf",
+  "wsh",
+];
+
 const divStyle = {
   flexDirection: "column",
   backgroundColor: "#fff",
@@ -27,12 +47,26 @@ function getFileUrl({ type, url, file, onError }) {
   url = url ? url : "";
   if (type === "file" && file) {
     try {
-      url = URL.createObjectURL(file);
+      const fileExtension = file.name.split(".").pop();
+      if (
+        file.type === "" ||
+        invalidFileExtensions.includes(fileExtension) ||
+        (file.type.includes("application") && file.type !== "application/pdf")
+      ) {
+        const msg = `${file.name} is not a valid file.`;
+        if (onError) {
+          onError(msg);
+        } else {
+          alert(msg);
+        }
+      } else {
+        url = URL.createObjectURL(file);
+      }
     } catch (err) {
       if (onError) {
         onError(err);
       } else {
-        console.log(err);
+        alert(err);
       }
     }
   }
@@ -71,7 +105,6 @@ class FilePreview extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log(props, state);
     if (
       (props.type === "file" && props.file !== state.file) ||
       (props.type === "url" && props.url !== state.url)
