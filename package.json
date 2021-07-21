@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syadav214/react-file-preview.git"
+    "url": "git+https://github.com/syadav214/react-file-preview-latest.git"
   },
   "keywords": [
     "reactjs",
@@ -27,9 +27,9 @@
   "author": "Santosh Yadav",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/syadav214/react-file-preview/issues"
+    "url": "https://github.com/syadav214/react-file-preview-latest/issues"
   },
-  "homepage": "https://github.com/syadav214/react-file-preview#readme",
+  "homepage": "https://github.com/syadav214/react-file-preview-latest#readme",
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.8.6"
