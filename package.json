@@ -1,6 +1,6 @@
 {
-  "name": "react-file-preview",
-  "version": "1.0.0",
+  "name": "react-file-preview-latest",
+  "version": "1.0.1",
   "description": "React component to render and preview images, pdf and text files via file object or web url",
   "main": "build/index.js",
   "peerDependencies": {
@@ -18,15 +18,11 @@
   "keywords": [
     "reactjs",
     "js",
-    "file",
+    "file preview",
+    "image preview",
     "preview",
-    "preview",
-    "image",
-    "preview",
-    "pdf",
-    "preview",
-    "text",
-    "preview"
+    "pdf preview",
+    "text preview"
   ],
   "author": "Santosh Yadav",
   "license": "ISC",
