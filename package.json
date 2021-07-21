@@ -1,6 +1,6 @@
 {
   "name": "react-file-preview-latest",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React component to render and preview images, pdf and text files via file object or web url",
   "main": "build/index.js",
   "peerDependencies": {

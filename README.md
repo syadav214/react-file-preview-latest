@@ -1,4 +1,4 @@
-# react-file-preview
+# react-file-preview-latest
 
 React component to render and preview images, pdf and text files via file object or web url
 
@@ -8,7 +8,7 @@ React component to render and preview images, pdf and text files via file object
 
 ```jsx
 import React, { Component } from "react";
-import FilePreview from "react-file-preview";
+import FilePreview from "react-file-preview-latest";
 
 class App extends Component {
   constructor() {
@@ -37,7 +37,7 @@ export default App;
 ## Install
 
 ```cli
-npm install react-file-preview
+npm install react-file-preview-latest
 ```
 
 ## Props
